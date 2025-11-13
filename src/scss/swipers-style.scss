@@ -2,7 +2,7 @@
 @use "variables" as *;
 
 
-.content__swiper{
+.swiper{
     padding-top:24px;     
 
     .swiper-title{
@@ -178,6 +178,6 @@
     
 }
 
- .grid__container{
+ .grid{
         display: none;
     }

@@ -7,13 +7,9 @@
 @use "swipers-style";
 @use "down-container";
 @use 'footer';
-@import 'media';
-@import 'modal';
-@import 'grid';
-
-
-*{ //outline:1px solid black;
-}
+@use'media';
+@use 'modal';
+@use 'grid';
 
 body{
     min-width: 320px;
@@ -32,7 +28,6 @@ nav{
     display:flex;
     align-items: center;
     background-color: white;
-
         &__list{
     width: 100%;
     height:auto;
@@ -83,7 +78,7 @@ li{
 /*display none*/
 
 
-.button__text--add{
+.button__text{
         display: none;
     }   
 

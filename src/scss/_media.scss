@@ -1,5 +1,13 @@
-@use '_variables' as *;
-@import "fonts";
+@use "content-text-style";
+@use 'variables' as *;
+@use 'button' as *;
+@use 'fonts' as *;
+@use 'services' as *;
+@use "swipers-style";
+@use "down-container";
+@use 'footer';
+@use 'modal';
+@use 'grid';
 
 .add-buttons{
     display: none;
@@ -7,9 +15,6 @@
 
 @media(min-width:768px) and (max-width:1366px) {
   
-    *{
-        //outline: 1px solid red;
-    }
 
     .add-buttons{
         display: flex;
@@ -51,9 +56,37 @@
         }
     }
 
-    .down-container{
-        width:421px;
+     .down-container{
+    font-family: "TT Lakes";
+    max-width:421px;
+    padding-left:32px;
+    padding-bottom:50px;
+        display: flex;
+        flex-direction: column;
+
+    &__text{
+        font-weight:400;
+        font-size:14px;
+        line-height: 20px;
+        letter-spacing:0.2px;
+        color:$text-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+    &__button{
+        font-family: "TT Lakes";
+        display: flex;
+        min-width:192px;
+        height: auto;
+        border:transparent;
+        background-color:$main-color;
+        font-weight: 500;
+        font-size: 16px;
+        line-height:24px;
+        letter-spacing:-0.2px;
+    }
+}
 
     footer{
         display: flex;
@@ -62,5 +95,248 @@
         
     }
 
-    
+    .swiper{
+        display:none;
+    }
+}
+@media (min-width:1336px){
+
+    .grid{
+        display: block;
+    }
+
+   
+
+    .grid__title{
+         display: flex;
+        align-items: center;
+        height: 80px;
+        padding-left: 16px;
+        border-top:1px solid $swiper-title-border;
+        font-weight:400;
+        font-size:16px;
+        line-height: 24px;
+        letter-spacing:-0.2px;
+        text-transform: uppercase;
+        color:$button-color;
+        background:$gradient;
+    }
+
+
+    .brands__wrapper{
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr 1fr;
+        gap: 16px;
+        padding-top:16px;
+        padding-left: 16px;
+        padding-right:24px;
+        max-height:180px;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+    }
+
+    .brands__wrapper.show-brands {
+  max-height: 1000px;
+}
+
+
+
+    .logo-section{
+        display: flex;
+        width:60%;
+    }
+    .brands__icon{
+        display: flex;
+        align-items: center;
+        width: 224px;
+        height: 72px;
+        background-color: white;
+        padding-left: 16px;
+        border: 1px solid $line-color;
+        border-radius: 6px;
+    }
+    .brands__icon--arrow{
+        padding-left:16px;
+    }
+
+    .content__button--watch{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:$main-color;
+        font-family: "TT Lakes";
+        font-weight:500;
+        font-size:16px;
+        line-height: 24px;
+        letter-spacing:-0.2px;
+        color:$text-color;
+    }
+
+        .devices__wrapper{
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+            padding:24px;
+            gap:24px;
+            max-height:150px;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+
+        .devices__wrapper.show-devices {
+        max-height: 1000px;
+        }
+
+        .devices{
+            width: 224px;
+            height: 160px;
+            background-color:white;
+            border: 1px solid $line-color;
+            border-radius: 6px;
+
+            &__icon--arrow{
+                width: 40px;
+                height:40px;
+                position:relative;
+                top:104px;
+                left:9px;
+            }
+
+            &__text{
+                font-weight: 500;
+                font-size: 16px;
+                line-height:24px;
+                letter-spacing:-0.2px;
+                padding-left:16px;
+                width:100%;
+            }
+        }
+
+        table{
+            width:95%;
+            height: 324px;
+            margin-left:24px;
+            border-collapse: collapse;
+        }
+
+        th{
+            text-align: left;
+            padding:31px 0 16px 16px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: $button-color;
+        }
+
+        tbody{
+            background-color: #ffffff;
+            border-radius:6px;
+        }
+        
+        td{
+            padding-left:16px;
+            font-weight: 400;
+            font-size:14px;
+            line-height:18px;
+            letter-spacing:0.2px;
+            color: $text-color;
+        }
+
+        .button--order{
+        width:119px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:#FF3E79;
+        border-radius: 16px;
+        gap:8px;
+        color: #ffffff;
+        padding: 16px 16px 16px 20px;
+    }
+
+    .brands__button,
+    .devices__button{
+        background-color:$main-color;
+        display: flex;
+        align-items: center;
+        padding-bottom:32px;
+        padding-top:24px;
+    }
+
+    button:hover,
+    button:focus{
+        opacity:0.6;
+    }
+
+    .down-container{
+    font-family: "TT Lakes";
+    max-width:421px;
+    padding-left:32px;
+    padding-bottom:50px;
+        display: flex;
+        flex-direction: column;
+
+    &__text{
+        font-weight:400;
+        font-size:14px;
+        line-height: 20px;
+        letter-spacing:0.2px;
+        color:$text-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__button{
+        font-family: "TT Lakes";
+        display: flex;
+        min-width:192px;
+        height: auto;
+        border:transparent;
+        background-color:$main-color;
+        font-weight: 500;
+        font-size: 16px;
+        line-height:24px;
+        letter-spacing:-0.2px;
+    }
+}
+
+.footer{
+    font-weight:500;
+    font-size: 14px;
+    line-height: 16px;
+    display:flex;
+    flex-direction: row;
+    gap: 145px;
+    .copyright{
+        display: flex;
+        flex: 1;
+        justify-content: flex-start;
+        }
+    &__disclaim{
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+
+  .content{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+
+        &__wrapper{
+            padding-left:24px;
+        }
+
+        &__image{
+            max-width:50%;
+            height:208px;
+            padding-right:24px;
+        }
+    }
+
+.swiper{
+    display: none;
+
+}
 }
