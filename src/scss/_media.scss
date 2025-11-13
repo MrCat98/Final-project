@@ -1,0 +1,66 @@
+@use '_variables' as *;
+@import "fonts";
+
+.add-buttons{
+    display: none;
+}
+
+@media(min-width:768px) and (max-width:1366px) {
+  
+    *{
+        //outline: 1px solid red;
+    }
+
+    .add-buttons{
+        display: flex;
+        padding-right:20px;
+    }
+
+    .content{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+
+        &__wrapper{
+            padding-left:24px;
+        }
+
+        &__image{
+            max-width:50%;
+            height:208px;
+            padding-right:24px;
+        }
+    }
+    .line--add{
+        display: flex;
+        width: 1px;
+        height: 32px;
+        background-color: $line-color;
+        margin-left: 20px;
+    }
+    .line{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .footer{
+        display: flex;
+        &__developers{
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+
+    .down-container{
+        width:421px;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    
+}

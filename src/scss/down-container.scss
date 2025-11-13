@@ -1,0 +1,37 @@
+@use '_variables' as *;
+
+.down-container{
+    font-family: "TT Lakes";
+    min-width: 288px;
+    min-height:191.98px;
+    padding-left:16px;
+        display: flex;
+        flex-direction: column;
+
+    &__text{
+        font-weight:400;
+        font-size:14px;
+        line-height: 20px;
+        letter-spacing:0.2px;
+        color:$text-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__button{
+        font-family: "TT Lakes";
+        display: flex;
+        min-width:192px;
+        height: auto;
+        border:transparent;
+        background-color:$main-color;
+        font-weight: 500;
+        font-size: 16px;
+        line-height:24px;
+        letter-spacing:-0.2px;
+    }
+}
+
+.down-container__button:hover{
+    opacity:0.7;
+}

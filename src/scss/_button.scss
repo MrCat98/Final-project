@@ -1,0 +1,24 @@
+@use '_variables' as *;
+@use 'fonts' as *;
+   .button--order__arrow{
+  width: 11.45px;
+  height: 6px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  transform: rotate(90deg);
+  position:absolute;
+  top: 1598.49px;
+  left: 127.4px;
+  background-color:black;
+}
+
+.content__button--watch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:8px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    white-space: nowrap;
+}
