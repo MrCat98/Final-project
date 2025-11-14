@@ -27,7 +27,7 @@
             <img src="img/moda-img/search.svg" alt="Search" />
           </button>
         </header>
-        <main class="modal__content__iteam">
+        <div class="modal__content__iteam">
           <button class="modal__iteam__button">Ремонт техники</button>
           <button class="modal__iteam__button">Услуги и сервисы</button>
           <button class="modal__iteam__button">Корпоративным клиентам</button>
@@ -36,7 +36,7 @@
           <button class="modal__iteam__button">Производителям</button>
           <button class="modal__iteam__button">Наши сервисные центры</button>
           <button class="modal__iteam__button">Контакты</button>
-        </main>
+        </div>
         <footer class="modal__content__footer">
           <div class="footer__buttons">
             <button class="footer__button">
@@ -105,31 +105,42 @@
           </div>
         </div>
         <div class="line"> </div>
-        <div class="navigation__button">
           <button class="navigation__button--icon">
-            <span class="button__text--add">Оставить заявку</span>
             <img
               src="./img/seting.svg"
               alt="seting"
               class="navigation__button--icon button--seting"
             />
           </button>
-        </div>
-        <div class="navigation__button">
+
           <button class="navigation__button--icon">
-            <span class="button__text--add">Статус ремонта</span>
             <img
               src="./img/search.svg"
               alt="search"
               class="navigation__button--icon button--search"
             />
           </button>
-        </div>
       </nav>
-      <h1 class="content__title">
-        <div class="content__title--line"></div>
-        Услуги и сервисы
-      </h1>
+      <header>
+        <h1 class="content__title">
+          <div class="content__title--line"></div>
+          Услуги и сервисы
+        </h1>
+        <div class="button__section--add">
+          <button class="navigation__button--icon">
+            <span class="button__text--add">Статус ремонта</span>
+                <img src="./img/search.svg"
+                  alt="search"
+                  class="navigation__button--icon button--search"/>
+          </button>
+          <button class="navigation__button--icon">
+            <span class="button__text--add">Оставить заявку</span>
+            <img src="./img/seting.svg"
+                  alt="seting"
+                  class="navigation__button--icon button--seting"/>
+          </button>
+        </div>
+      </header>
       <ul class="content__list--service">
         <li class="content__item--servic">Ремонтируемые бренды</li>
         <li class="content__item--servic">Дополнительные услуги</li>
@@ -167,7 +178,7 @@
         </div>
         <img src="img/content.jpg" alt="image" class="content__image" />
       </div>
-    </main>
+    
     <!-- Swiper -->
     <div class="swiper">
       <span class="swiper-title">Ремонт техники различных брендов</span>
@@ -814,18 +825,23 @@
       >
     </div>
 
-    <footer class="footer">
+    <footer class="main__footer">
       <span class="footer__copyright"
         >© 2019 CPS <br />
-        Разработано командой Apesong</span
-      >
-      <span class="footer__privacy-policy"> Политика конфиденциальности</span>
+        Разработано командой Apesong
+      </span>
+      <br><br>
+      <span class="footer__privacy-policy">
+         Политика конфиденциальности
+      </span>
+      <br><br>
       <span class="footer__disclaimer">
         Информация, размещенная на данной странице, не является публичной
-        офертой</span
-      >
+        офертой
+      </span>
     </footer>
-
+    </main>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   </body>
 </html>

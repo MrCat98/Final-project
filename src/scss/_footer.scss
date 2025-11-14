@@ -1,15 +1,16 @@
 @use 'variables' as *;
-.footer {
+.main__footer {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   padding: 40px 24px 19px 24px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
   color: $swiper-title-color;
   opacity: 72.18%;
+  
   .copyright {
     display: flex;
     justify-content: center;
