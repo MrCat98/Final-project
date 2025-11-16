@@ -120,33 +120,40 @@ table{
 
   table {
     display: block;
-    height: auto;
-    margin-left: 24px;
-    border-collapse: collapse;
-  }
+  width: 100%;
+  border-collapse: collapse;
+}
 
-  th {
-    text-align: left;
-    padding: 31px 0 16px 16px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: $button-color;
-  }
+td,th{
+  padding:16px;
+  width:100vh;
+  padding-left:24px;
+}
 
-  tbody {
-    background-color: #ffffff;
-    border-radius: 6px;
-  }
+td{
+  background-color: white;
+  margin-left:24px;
 
-  td {
-    padding-left: 16px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    color: $text-color;
-  }
+}
+
+
+tbody tr {
+  position: relative;
+}
+
+tbody tr::after {
+  content: '';
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  height: 1px;
+  background-color:$main-color;
+}
+
+tbody tr:last-child::after {
+  display: none;
+}
 
   .button--order {
     width: 119px;
