@@ -113,7 +113,6 @@ const button = document.querySelector('.content__button--watch')
 const buttonText = document.querySelector('.content__button--text')
 const buttonArrow = document.querySelector('.content__button--icon')
 
-if (window.innerWidth < 768) {
   button.addEventListener('click', () => {
     const isHidden =
       secondText.style.display === '' || secondText.style.display === 'none'
@@ -132,4 +131,3 @@ if (window.innerWidth < 768) {
       buttonArrow.classList.remove('rotate')
     }
   })
-}
