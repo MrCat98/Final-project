@@ -10,10 +10,6 @@
 @use 'footer';
 @use 'modal';
 
-*{
-  //outline:2px solid black;
-}
-
 body {
   min-width: 320px;
   height: auto;
@@ -112,14 +108,11 @@ li {
     margin-top: 16px;
   }
 
-  .content__text {
+  .content__wrapper{
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: -0.2px;
-    display: flex;
-    width: 288px;
-    height: 90px;
     overflow: hidden;
     padding-left: 16px;
     color: $text-color;
