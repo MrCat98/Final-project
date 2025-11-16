@@ -121,6 +121,16 @@
     align-items: center;
   }
 
+  content {
+    display: flex;
+    gap:48px;
+  }
+
+    .content__wrapper {
+      padding-top:32px;
+      padding-left: 24px;
+    }
+
   .content__text--second,
  .content__text--tridth{
       display:block;

@@ -82,10 +82,10 @@ brandsButton.addEventListener('click', () => {
 
   if (brandsBox.classList.contains('show-brands')) {
     brandsButtonText.textContent = 'Cкрыть'
-    brandsButtonArrow.classList.add ('rotate')
+    brandsButtonArrow.classList.add('rotate')
   } else {
     brandsButtonText.textContent = 'Показать все'
-    brandsButtonArrow.classList.remove ('rotate')
+    brandsButtonArrow.classList.remove('rotate')
   }
 })
 
@@ -100,35 +100,36 @@ devicesButton.addEventListener('click', () => {
 
   if (devicesBox.classList.contains('show-devices')) {
     devicesButtonText.textContent = 'Скрыть'
-    devicesButtonArrow.classList.add ('rotate')
+    devicesButtonArrow.classList.add('rotate')
   } else {
     devicesButtonText.textContent = 'Показать все'
-    devicesButtonArrow.classList.remove ('rotate')
+    devicesButtonArrow.classList.remove('rotate')
   }
 })
 
-const secondText = document.querySelector('.content__text--second');
-const tridthText = document.querySelector('.content__text--tridth');
-const button = document.querySelector('.content__button--watch');
-const buttonText = document.querySelector('.content__button--text');
-const buttonArrow = document.querySelector('.content__button--icon');
+const secondText = document.querySelector('.content__text--second')
+const tridthText = document.querySelector('.content__text--tridth')
+const button = document.querySelector('.content__button--watch')
+const buttonText = document.querySelector('.content__button--text')
+const buttonArrow = document.querySelector('.content__button--icon')
 
-button.addEventListener('click', () => {
+if (window.innerWidth < 768) {
+  button.addEventListener('click', () => {
+    const isHidden =
+      secondText.style.display === '' || secondText.style.display === 'none'
 
-  const isHidden = secondText.style.display === '' || secondText.style.display === 'none';
-
-  if (isHidden) {
-    // ПОКАЗАТЬ
-    secondText.style.display = 'inline';
-    tridthText.style.display = 'inline';
-    buttonText.textContent = 'Скрыть';
-    buttonArrow.classList.add('rotate');
-  } else {
-    // СКРЫТЬ
-    secondText.style.display = 'none';
-    tridthText.style.display = 'none';
-    buttonText.textContent = 'Читать далее';
-    buttonArrow.classList.remove('rotate');
-  }
-});
-
+    if (isHidden) {
+      // ПОКАЗАТЬ
+      secondText.style.display = 'inline'
+      tridthText.style.display = 'inline'
+      buttonText.textContent = 'Скрыть'
+      buttonArrow.classList.add('rotate')
+    } else {
+      // СКРЫТЬ
+      secondText.style.display = 'none'
+      tridthText.style.display = 'none'
+      buttonText.textContent = 'Читать далее'
+      buttonArrow.classList.remove('rotate')
+    }
+  })
+}
