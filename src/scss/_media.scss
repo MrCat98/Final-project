@@ -107,6 +107,8 @@
       font-size: 16px;
       line-height: 24px;
       letter-spacing: -0.2px;
+
+      
     }
   }
 
@@ -287,6 +289,14 @@
   border-collapse: collapse;
 }
 
+th{
+  font-weight:500;
+  font-size:14px;
+  line-height: 16px;
+  text-align: start;
+  color:$button-color;
+}
+
 td,th{
   padding:16px;
   width:100vh;
@@ -294,6 +304,10 @@ td,th{
 }
 
 td{
+  font-weight: 400;
+  font-size:14px;
+  line-height: 18px;
+  color:$text-color;
   background-color: white;
   margin-left:24px;
 

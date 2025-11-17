@@ -119,6 +119,16 @@ li {
   }
 }
 
+.devices__button--arrow{
+  display: flex;
+  align-items: center;
+  width: 24px;
+  height:auto;
+  padding-left:9px;
+  color: red;
+  font-size:25px;
+}
+
   @media (min-width:1336px) {
     nav{
         display: none;

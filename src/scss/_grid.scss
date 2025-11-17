@@ -120,8 +120,18 @@ table{
 
   table {
     display: block;
+    padding-left: 16px;
+    padding-right:24px;
   width: 100%;
   border-collapse: collapse;
+}
+
+th{
+  font-weight:500;
+  font-size:14px;
+  line-height: 16px;
+  text-align: start;
+  color:$button-color;
 }
 
 td,th{
@@ -131,6 +141,10 @@ td,th{
 }
 
 td{
+  font-weight: 400;
+  font-size:14px;
+  line-height: 18px;
+  color:$text-color;
   background-color: white;
   margin-left:24px;
 
