@@ -29,7 +29,10 @@ nav {
   height: 88px;
   display: flex;
   align-items: center;
+  gap:8px;
   background-color: white;
+  padding-left: 16px;
+  padding-right:24px;
   &__list {
     width: 100%;
     height: auto;
@@ -55,21 +58,18 @@ nav {
   }
 }
 
-li {
-  list-style: none;
-}
-
 .line {
-  width: 2px;
+  min-width: 2px;
   height: 32px;
   background-color: $line-color;
   margin-right: 20px;
+  margin-left:16px;
 }
 
 .right--button {
   display: flex;
   flex: 1;
-  justify-content: flex-end;
+  gap:8px;
 }
 /*display none*/
 
@@ -91,6 +91,8 @@ li {
     font-size: 24px;
     line-height: 40px;
     letter-spacing: -0.6px;
+    color: $text-color;
+    gap: 12px;
 
     &--line {
       width: 4px;
@@ -102,10 +104,6 @@ li {
   &__image {
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 16px;
   }
 
   .content__wrapper{
@@ -115,18 +113,22 @@ li {
     letter-spacing: -0.2px;
     overflow: hidden;
     padding-left: 16px;
+    padding-top:24px;
     color: $text-color;
   }
-}
-
-.devices__button--arrow{
-  display: flex;
-  align-items: center;
-  width: 24px;
-  height:auto;
-  padding-left:9px;
-  color: red;
-  font-size:25px;
+  .content__button--watch {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    background-color: $main-color;
+    font-family: 'TT Lakes';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $text-color;
+    padding-top:16px;
+  }
 }
 
   @media (min-width:1336px) {

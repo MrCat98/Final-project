@@ -7,9 +7,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   color: $swiper-title-color;
   opacity: 72.18%;
+
   
   .copyright {
     display: flex;

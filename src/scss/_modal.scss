@@ -4,12 +4,18 @@
 
 /*header*/
 
-
+*{
+    box-sizing: border-box;
+    padding:0;
+}
 
 .modal{
     display: none;
     min-width:100%;
     height:100%;
+    &__logo{
+        padding-left:22px;
+    }
 .modal__content{ 
     display: flex;
     align-items: center;
@@ -85,8 +91,12 @@
         height: 100vh;
         padding-bottom:32px;
         justify-content: flex-end;
+        padding-left: 16px;
     }
-
+        .footer__buttons{
+            display: flex;
+            gap:16px;
+        }
         .modal__footer__email{
             font-weight: 400;
             font-size:16px;
@@ -94,7 +104,6 @@
             letter-spacing:-0.2px;
             color:#1b1c21;
             padding-top: 16px;
-            padding-left:16px;
             }
 
         .modal__footer__phone{
@@ -104,7 +113,18 @@
             letter-spacing:-0.6px;
             color:#1b1c21;  
             padding-top:12px;
-            padding-left:16px;
+        }
+
+        .change{
+        border: 0;
+        background-color: white;
+        color:#1b1c21;
+        font-family: "TT Lakes";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        padding-top:8px;
         }
     }
 }
@@ -112,36 +132,6 @@
 button{
     border: 0;
     background-color: white;
-}
-
-
-
-/*content*/
-
-
-/*footer*/
-   
-
-.footer__buttons{
-    display: flex;
-    padding-top: 32px;
-}
-
-.footer__button{
-    padding-right:16px;
-}
-
-
-.change{
-    border: 0;
-    background-color: white;
-    color:#1b1c21;
-    font-family: "TT Lakes";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    padding-top: 8px;
 }
 
 /*effects*/
@@ -204,8 +194,7 @@ button{
         display: flex;
         justify-content: flex-end;
     }
-    }
-
+}
     &__iteam{
             width: 100%;
     height: auto;
@@ -219,7 +208,7 @@ button{
     .modal__iteam__button:focus{
     border-left:4px solid #41f6d7;
     color:#7e7e82;
-}
+    }
 
      .modal__iteam__button{
             font-family: "TT Lakes";
@@ -240,37 +229,6 @@ button{
             border-left:4px solid transparent ;
         }
     }
-
-    &__footer{
-        display: flex;
-        flex-direction: column;
-        background-color: #FFFFFF;
-        width: 100%;
-        height: 100vh;
-        padding-bottom:32px;
-        align-items: flex-start;
-        justify-content: flex-end;
-    }
-
-        .modal__footer__email{
-            font-weight: 400;
-            font-size:16px;
-            line-height:24px;
-            letter-spacing:-0.2px;
-            color:#1b1c21;
-            padding-top: 16px;
-            padding-left:16px;
-            }
-
-        .modal__footer__phone{
-             font-weight: 700;
-            font-size:24px;
-            line-height:32px;
-            letter-spacing:-0.6px;
-            color:#1b1c21;  
-            padding-top:12px;
-            padding-left:16px;
-        }
-    }
+}
 }
 }

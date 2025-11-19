@@ -35,7 +35,7 @@ function initSwipers() {
     swiperSecond = null
   }
   if (window.innerWidth < 768 && !swiperThird) {
-    swiperSecond = new Swiper('.swiper-third', {
+    swiperThird = new Swiper('.swiper-third', {
       slidesPerView: 'auto',
       spaceBetween: 16,
       loop: true,
@@ -45,7 +45,7 @@ function initSwipers() {
       }
     })
   } else if (window.innerWidth >= 768 && swiperThird) {
-    swiperSecond.destroy(true, true)
+    swiperThird.destroy(true, true)
     swiperSecond = null
   }
 }
