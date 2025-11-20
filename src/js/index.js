@@ -50,10 +50,6 @@ function initSwipers() {
   }
 }
 
-initSwipers()
-
-window.addEventListener('resize', initSwipers)
-
 // Находим элементы один раз
 const modalButton = document.querySelector('.navigation__button--modal')
 const modalWindow = document.querySelector('.modal')
@@ -62,13 +58,13 @@ const closeButton = document.querySelector('.headar__button--close')
 // Клик на кнопку модалки
 modalButton.addEventListener('click', () => {
   {
-    modalWindow.style.display = 'block'
+    modalWindow.classList.toggle ('visable')
   }
 })
 
 // Клик на крестик закрытия
 closeButton.addEventListener('click', () => {
-  modalWindow.style.display = 'none'
+  modalWindow.classList.remove ('visable')
 })
 
 const brandsBox = document.querySelector('.brands__wrapper')

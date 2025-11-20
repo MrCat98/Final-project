@@ -6,9 +6,9 @@
 @use 'services' as *;
 @use 'swipers-style';
 @use 'down-container';
-@use 'media';
 @use 'footer';
 @use 'modal';
+@use 'media';
 
 body {
   min-width: 320px;
